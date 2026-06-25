@@ -2,7 +2,7 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-export function proxy(request: NextRequest) {
+export function middleware(request: NextRequest) {
     // 1. Log the HTTP method and the path of the incoming request
     console.log(`[PROXY LOG] ${request.method} -> ${request.nextUrl.pathname}`);
 
